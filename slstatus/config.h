@@ -67,6 +67,8 @@ static const struct arg args[] = {
 	/* function format          argument */
   { run_command, "  %s | ",  "uname -r | awk -F \"-\" '{ print $1 }'" },
   { disk_free,   " %s | ",   "/" },
+  /* { netspeed_rx, " %s | ",    "wlan0" }, */
+  /* { netspeed_tx, " %s | ",    "wlan0" }, */
   { cpu_perc,    "﬙ %s%% | ", NULL },
   { ram_perc,    " %s%% | ", NULL },
   { run_command, " %s%% | ", "amixer get Master | tail -n1 | sed -r \"s/.*\\[(.*)%\\].*/\\1/\"" },
